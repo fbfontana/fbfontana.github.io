@@ -18,6 +18,7 @@
     navigator.mediaDevices.getUserMedia(myConstraints).then(function (localMediaStream) {
         var video = document.querySelector('video');
         video.src = window.URL.createObjectURL(localMediaStream);
+        
         video.onloadedmetadata = function (e) {};
         mediaStream = localMediaStream;
     }).catch(function (err) {});
