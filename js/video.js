@@ -18,11 +18,14 @@
     navigator.mediaDevices.getUserMedia(myConstraints).then(function (localMediaStream) {
         var video = document.querySelector('video');
         video.src = window.URL.createObjectURL(localMediaStream);
-        
+
         video.onloadedmetadata = function (e) {};
         mediaStream = localMediaStream;
     }).catch(function (err) {});
 
+    video.addEventListener('click', function () {
+        video.play();
+    }, false);
 
     var elem = document.getElementById("recordedVideo");
     if (elem.webkitRequestFullscreen) {
