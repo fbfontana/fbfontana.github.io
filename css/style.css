@@ -1,0 +1,65 @@
+body {
+    margin: 0px;
+    background-color: #92D3EC;
+    background-color: #C8EBF9;
+    background-color: #C0C0C0;
+}
+
+.container {
+    padding-left: 0px;
+    padding-right: 0px;
+    width: auto;
+    /* to cover more than 1170px */
+}
+
+.upperBar {
+    background-color: #282828;
+}
+
+.upperBarChild {
+    font-family: sans-serif;
+    color: #2587AC;
+    color: #FFFC66;
+    margin: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+#logoAndSearch {}
+
+#productName {
+    margin: 0;
+}
+
+#searchBar {}
+
+#searchTextInput {
+    border: 0;
+    outline: 0;
+    padding: .4em 0 0 .6em;
+    color: #282828;
+}
+
+#searchButton {
+    display: inline-block;
+    vertical-align: bottom;
+    color: #282828;
+    margin-left: -.4em;
+}
+
+.footer {
+    /*position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;*/
+    padding: 1rem;
+    background-color: #C8EBF9;
+    background-color: #282828;
+    text-align: center;
+}
+
+.ImageNotes {color: #C8EBF9;
+    font-family: sans-serif;
+    font-size: 9px;
+}
