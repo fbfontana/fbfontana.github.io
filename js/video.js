@@ -25,6 +25,10 @@
     // }).catch(function (err) {});
 
     alert('1111');
+    if (navigator.mediaDevices === undefined) {
+        alert('1d111');
+        navigator.mediaDevices = {};
+    }
     navigator.mediaDevices.getUserMedia(constraints)
         .then(function (mediaStream) {
             alert('gd');
