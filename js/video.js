@@ -1,21 +1,4 @@
-    var myConstraints = {
-        // audio: false,
-        // video: {
-        //     width: {
-        //         min: 30
-        //     },
-        //     height: {
-        //         min: 30
-        //     }
-        // }
-    };
-
     var constraints = {
-        // audio: true,
-        // video: {
-        //     width: 1280,
-        //     height: 720
-        // }
         video: {
             width: {
                 min: 30
@@ -43,6 +26,7 @@
 
     navigator.mediaDevices.getUserMedia(constraints)
         .then(function (mediaStream) {
+            alert('g');
             var video = document.querySelector('video');
             video.srcObject = mediaStream;
             video.onloadedmetadata = function (e) {
