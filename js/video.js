@@ -28,7 +28,7 @@
         .then(function (mediaStream) {
             alert('gd');
             var video = document.querySelector('video');
-            video.srcObject = mediaStream;
+            video.srcObject = mediaStream; // moz ok insteadof video.src
             video.onloadedmetadata = function (e) {
                 video.play();
             };
@@ -38,9 +38,9 @@
         }); // always check for errors at the end.
 
 
-    // video.addEventListener('click', function () {
-    //     video.play();
-    // }, false);
+    video.addEventListener('click', function () {alert('2');
+        video.play();
+    }, false);
 
     // var elem = document.getElementById("recordedVideo");
     // if (elem.webkitRequestFullscreen) {
