@@ -27,27 +27,27 @@
         video.play();
     }, false);
 
-    var elem = document.getElementById("recordedVideo");
-    if (elem.webkitRequestFullscreen) {
-        elem.webkitRequestFullscreen();
-    }
+    // var elem = document.getElementById("recordedVideo");
+    // if (elem.webkitRequestFullscreen) {
+    //     elem.webkitRequestFullscreen();
+    // }
 
-    document.addEventListener("keydown", function (e) {
-        if (e.keyCode == 13) {
-            alert();
-            toggleFullScreen();
-        }
-    }, false);
+    // document.addEventListener("keydown", function (e) {
+    //     if (e.keyCode == 13) {
+    //         alert();
+    //         toggleFullScreen();
+    //     }
+    // }, false);
 
-    function toggleFullScreen() {
-        if (!elem.fullscreenElement) {
-            elem.webkitRequestFullscreen();
-        } else {
-            if (elem.exitFullscreen) {
-                elem.webkitExitFullscreen();
-            }
-        }
-    }
+    // function toggleFullScreen() {
+    //     if (!elem.fullscreenElement) {
+    //         elem.webkitRequestFullscreen();
+    //     } else {
+    //         if (elem.exitFullscreen) {
+    //             elem.webkitExitFullscreen();
+    //         }
+    //     }
+    // }
 
     /* snapshot     
     video.addEventListener('click', snapshot, false);
