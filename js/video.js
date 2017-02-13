@@ -24,7 +24,7 @@
     //     mediaStream = localMediaStream;
     // }).catch(function (err) {});
 
-
+    alert('1111');
     navigator.mediaDevices.getUserMedia(constraints)
         .then(function (mediaStream) {
             alert('gd');
