@@ -1,4 +1,5 @@
     var constraints = {
+        audio: true,
         video: {
             width: {
                 min: 30
@@ -38,7 +39,8 @@
         }); // always check for errors at the end.
 
 
-    video.addEventListener('click', function () {alert('2');
+    video.addEventListener('click', function () {
+        alert('2');
         video.play();
     }, false);
 
