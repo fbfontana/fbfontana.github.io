@@ -1,5 +1,21 @@
     var myConstraints = {
-        audio: false,
+        // audio: false,
+        // video: {
+        //     width: {
+        //         min: 30
+        //     },
+        //     height: {
+        //         min: 30
+        //     }
+        // }
+    };
+
+    var constraints = {
+        // audio: true,
+        // video: {
+        //     width: 1280,
+        //     height: 720
+        // }
         video: {
             width: {
                 min: 30
@@ -15,17 +31,32 @@
     var ctx = canvas.getContext('2d');
     var mediaStream = null;
 
-    navigator.mediaDevices.getUserMedia(myConstraints).then(function (localMediaStream) {
-        var video = document.querySelector('video');
-        video.src = (window.URL || window.webkitURL || window || {}).createObjectURL(localMediaStream);
 
-        video.onloadedmetadata = function (e) {};
-        mediaStream = localMediaStream;
-    }).catch(function (err) {});
+    // navigator.mediaDevices.getUserMedia(myConstraints).then(function (localMediaStream) {
+    //     var video = document.querySelector('video');
+    //     video.src = (window.URL || window.webkitURL || window.mozURL || window.msURL || {}).createObjectURL(localMediaStream);
 
-    video.addEventListener('click', function () {
-        video.play();
-    }, false);
+    //     video.onloadedmetadata = function (e) {};
+    //     mediaStream = localMediaStream;
+    // }).catch(function (err) {});
+
+
+    navigator.mediaDevices.getUserMedia(constraints)
+        .then(function (mediaStream) {
+            var video = document.querySelector('video');
+            video.srcObject = mediaStream;
+            video.onloadedmetadata = function (e) {
+                video.play();
+            };
+        })
+        .catch(function (err) {
+            alert(err.name + ": " + err.message);
+        }); // always check for errors at the end.
+
+
+    // video.addEventListener('click', function () {
+    //     video.play();
+    // }, false);
 
     // var elem = document.getElementById("recordedVideo");
     // if (elem.webkitRequestFullscreen) {
