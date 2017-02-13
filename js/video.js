@@ -26,7 +26,7 @@
 
     navigator.mediaDevices.getUserMedia(constraints)
         .then(function (mediaStream) {
-            alert('g');
+            alert('gd');
             var video = document.querySelector('video');
             video.srcObject = mediaStream;
             video.onloadedmetadata = function (e) {
