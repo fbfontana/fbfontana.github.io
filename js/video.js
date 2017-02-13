@@ -29,6 +29,7 @@
         alert('1d111');
         navigator.mediaDevices = {};
     }
+    else    {alert(navigator.mediaDevices);}
     navigator.mediaDevices.getUserMedia(constraints)
         .then(function (mediaStream) {
             alert('gd');
