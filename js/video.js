@@ -30,6 +30,7 @@
     } else {
         alert(navigator.mediaDevices);
     }
+
     navigator.mediaDevices.getUserMedia(constraints)
         .then(function (mediaStream) {
             alert('gd');
@@ -39,11 +40,11 @@
                 video.play();
             };
         })
-        .catch(function (err) {
+        .catch(function (err) {alert('g2f');
             alert(err.name + ": " + err.message);
         }); // always check for errors at the end.
 
-alert('2f');
+    alert('2f');
     video.addEventListener('click', function () {
         alert('2');
         video.play();
