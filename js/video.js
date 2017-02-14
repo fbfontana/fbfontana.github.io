@@ -2,10 +2,10 @@
         audio: true,
         video: {
             width: {
-                min: 30
+                min: 3
             },
             height: {
-                min: 30
+                min: 3
             }
         }
     };
@@ -24,12 +24,12 @@
     //     mediaStream = localMediaStream;
     // }).catch(function (err) {});
 
-    alert('1111');
     if (navigator.mediaDevices === undefined) {
         alert('1d111');
         navigator.mediaDevices = {};
+    } else {
+        alert(navigator.mediaDevices);
     }
-    else    {alert(navigator.mediaDevices);}
     navigator.mediaDevices.getUserMedia(constraints)
         .then(function (mediaStream) {
             alert('gd');
@@ -43,7 +43,7 @@
             alert(err.name + ": " + err.message);
         }); // always check for errors at the end.
 
-
+alert('2f');
     video.addEventListener('click', function () {
         alert('2');
         video.play();
