@@ -25,28 +25,24 @@
     // }).catch(function (err) {});
 
     if (navigator.mediaDevices === undefined) {
-        alert('1d111');
+        alert('undefined');
         navigator.mediaDevices = {};
-    } else {
-        alert(navigator.mediaDevices);
     }
 
     navigator.mediaDevices.getUserMedia(constraints)
         .then(function (mediaStream) {
-            alert('gd');
             var video = document.querySelector('video');
             video.srcObject = mediaStream; // moz ok insteadof video.src
             video.onloadedmetadata = function (e) {
                 video.play();
             };
         })
-        .catch(function (err) {alert('g2f');
+        .catch(function (err) {
+            alert('g2f');
             alert(err.name + ": " + err.message);
         }); // always check for errors at the end.
 
-    alert('2f');
     video.addEventListener('click', function () {
-        alert('2');
         video.play();
     }, false);
 
