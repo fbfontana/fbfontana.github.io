@@ -82,3 +82,28 @@ body {
     font-size: 10;
     padding: 1px 3px;
 }
+
+.headerCompensator {
+    height: 50px;
+}
+
+.videoPreview {
+    padding: 0.5em;
+    height: 110px;
+    /*background-color: #92D3EC;*/
+}
+
+.videoPreview #img {
+    max-height: 100%;
+    width: 100%;
+}
+
+#moreVideos{
+    /*background-color: #92D3EC;*/
+    text-align: center;
+    padding: 0.5em;
+}
+
+#moreVideos button{
+    width: 100%;
+}
