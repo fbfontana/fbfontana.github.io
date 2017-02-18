@@ -78,4 +78,6 @@ body {
 #onlineLight button {
     color: green;
     background-color: lawngreen;
+    font-size: 10;
+    padding: 1px 3px;
 }
