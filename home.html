@@ -17,7 +17,11 @@
 
 <body>
     <div class="container">
-        <div class="upperBar col-xs-12">
+        <div class="upperBar col-xs-12 navbar-fixed-top">
+            <!--<div id="" class="col-xs-2 visible-xs upperBarChild"></div>-->
+            <div id="onlineLight" class="upperBarChild col-sm-4 col-lg-6 col-xl-6 hidden-xs ">
+                <button class="">Online</button>
+            </div>
             <div id="logoAndSearch" class="col-xs-12 col-sm-8 col-lg-6 col-xl-6 pull-right">
                 <div id='' class="col-xs-12 col-sm-6 upperBarChild visible-xs">
                     <h3 class="" id="productName">Mondial life</h3>
@@ -25,6 +29,9 @@
                 <div id='searchBar' class="col-xs-12 col-sm-8 upperBarChild">
                     <input type='text' placeholder='Search...' id='searchTextInput' class="" />
                     <button id='searchButton'>Ok</button>
+                    <div id="onlineLight" class=" col-xs-2  visible-xs ">
+                        <button class="">Online</button>
+                    </div>
                 </div>
                 <div id='' class="col-xs-12  col-sm-4 upperBarChild hidden-xs pull-right">
                     <h3 class="" id="productName">Mondial life</h3>
@@ -32,10 +39,10 @@
             </div>
         </div>
         <canvas style="display:none;"></canvas>
-        <div id="" class="col-xs-6 col-sm-6">
+        <div id="" class="col-xs-6 col-sm-6" style="padding-bottom:60px;">
             <video controls muted id="recordedVideo"></video>
         </div>
-        <div class="footer navbar-fixed-bottom">
+        <div class=" footer col-xs-12">
             <div class="ImageNotes">Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from
                 <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by
                 <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
