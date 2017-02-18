@@ -12,7 +12,7 @@
 
     var video = document.querySelector('video');
     var canvas = document.querySelector('canvas');
-    var ctx = canvas.getContext('2d');
+    // var ctx = canvas.getContext('2d');
     var mediaStream = null;
 
 
