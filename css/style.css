@@ -5,6 +5,7 @@ body {
     background-color: #92D3EC;
     background-color: #C8EBF9;
     background-color: #C0C0C0;
+    font-family: 'Lato', sans-serif;
 }
 
 .container {
@@ -18,10 +19,11 @@ body {
 
 .upperBar {
     background-color: #282828;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 .upperBarChild {
-    font-family: sans-serif;
     color: #2587AC;
     color: #FFFC66;
     margin: 0px;
@@ -34,6 +36,7 @@ body {
 
 #productName {
     margin: 0;
+    font-family: 'Montserrat', serif;
 }
 
 #searchBar {}
@@ -51,6 +54,9 @@ body {
     vertical-align: bottom;
     color: #282828;
     margin-left: -.4em;
+    background-color: yellow;
+    border: none;
+    height: 26px;
 }
 
 .footer {
@@ -66,8 +72,8 @@ body {
 
 .ImageNotes {
     color: #C8EBF9;
-    font-family: sans-serif;
     font-size: 9px;
+    margin-top: 2em;
 }
 
 #onlineLight {
@@ -113,7 +119,62 @@ body {
     width: 100%;
 }
 
+#otherLinks {
+    text-align: center;
+    padding: 0.5em;
+}
+
+#otherLinks button {
+    width: 100%;
+}
+
 #adsImg {
     max-height: 100%;
     width: 100%;
 }
+
+
+/* latin */
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'), url(../fonts/montserrat.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url(../fonts/opensans.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lato Regular'), local('Lato-Regular'), url(../fonts/lato.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+
+/*.btn-social {
+    display: inline-block;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 20px;
+    line-height: 45px
+}
+
+.btn-outline {
+    color: #fff;
+    font-size: 20px;
+    border: 2px solid #fff;
+    background: 0 0;
+    transition: all .3s ease-in-out;
+    margin-top: 15px
+}*/
